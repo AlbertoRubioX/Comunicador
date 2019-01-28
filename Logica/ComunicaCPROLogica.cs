@@ -54,6 +54,11 @@ namespace Logica
             return AccesoDatos.EjecutaSPCPRO("sp_alert_globalEnvios");
         }
 
+        public static int AlertaRPOsDetenidos()
+        {
+            return AccesoDatos.EjecutaSPCPRO("sp_alert_rpodetenidos");
+        }
+
         public static bool AlertaDiaria(ComunicaLogica com)
         {
             DataTable datos = new DataTable();

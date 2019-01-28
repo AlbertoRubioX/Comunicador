@@ -135,6 +135,12 @@ namespace Comunicador
         {
             ComunicaCPROLogica.AlertaGLOBALENVIOS();
         }
+
+        private void AlertaRPOsDetenidos()
+        {
+            ComunicaCPROLogica.AlertaRPOsDetenidos();
+        }
+
         #endregion
 
         private void Iniciar()
@@ -458,7 +464,7 @@ namespace Comunicador
 
         private void CloverProEnvios()
         {
-            //alertacalos()
+            AlertaRPOsDetenidos();
             AlertaKanban();
             AlertaKanbanAlmacen();
             GeneraDuracionSetUpEmp();
