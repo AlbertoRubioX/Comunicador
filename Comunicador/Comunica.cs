@@ -161,13 +161,13 @@ namespace Comunicador
 
 
             Cursor.Current = Cursors.WaitCursor;
-
-            ConteoCiclico();
-            /*
             CloverProEnvios();
-            ServicioEnvios();
-            CargarEnvios();
-            */
+           CargarEnviosProd();
+            /*ConteoCiclico();
+            
+            ServicioEnvios();*/
+            //CargarEnvios();
+
             Cursor.Current = Cursors.Arrow;
         }
 
@@ -464,18 +464,17 @@ namespace Comunicador
 
         private void CloverProEnvios()
         {
-            AlertaRPOsDetenidos();
-            AlertaKanban();
-            AlertaKanbanAlmacen();
-            GeneraDuracionSetUpEmp();
-            GeneraDuracionSetUp();
+           // AlertaRPOsDetenidos();
+            //AlertaKanban();
+            //AlertaKanbanAlmacen();
+            //GeneraDuracionSetUpEmp();
+            //GeneraDuracionSetUp();
 
-            AlertaCapturaSetUp();
-            AlertaPreviaSetUp();
-            AlertaDuracionSetUp();
-            AlertaRPOGlobales();
+            //AlertaCapturaSetUp();
+            //AlertaPreviaSetUp();
+            //AlertaDuracionSetUp();
+            //AlertaRPOGlobales();
 
-            CargarEnviosProd();
 
             
             if (dgwEnvios.Rows.Count <= 0)
